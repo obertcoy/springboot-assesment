@@ -15,4 +15,10 @@ For local deployment, you will need the `secrets.properties` file.
 To obtain the file, please send an email to:  
 **[laisobert2@gmail.com](mailto:laisobert2@gmail.com)**
 
+## Notes
+
+- The application uses **Supabase** as the database to make the project more scalable, instead of reading data from a static TSV file.
+- The database uses the `LIKE` operator for fetching data, but the program can also fall back on selecting all data and applying fuzzy matching, rather than relying on the built-in search functionality of the `LIKE` operator.
+- The project is hosted on **AWS EC2**.
+
 ---
