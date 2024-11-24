@@ -21,4 +21,12 @@ To obtain the file, please send an email to:
 - The database uses the `LIKE` operator for fetching data, but the program can also fall back on selecting all data and applying fuzzy matching, rather than relying on the built-in search functionality of the `LIKE` operator.
 - The project is hosted on **AWS EC2**.
 
+## Result
+![image](https://github.com/user-attachments/assets/f1851b7c-db4d-48da-978a-e7736283723f)
+/suggestions?q=SomeRandomCityInTheMiddleOfNowhere
+
+![image](https://github.com/user-attachments/assets/79d72d8c-a041-4c4c-a11c-eef5cbf3ba9d)
+/suggestions?q=SomeRandomCityInTheMiddleOfNowhere
+
+
 ---
