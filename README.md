@@ -15,6 +15,9 @@ For local deployment, you will need the `secrets.properties` file.
 To obtain the file, please send an email to:  
 **[laisobert2@gmail.com](mailto:laisobert2@gmail.com)**
 
+You can access the Swagger UI for API documentation at:
+http://localhost:8080/swagger-ui/index.html#
+
 ## Notes
 
 - The application uses **Supabase** as the database to make the project more scalable, instead of reading data from a static TSV file.
