@@ -13,6 +13,6 @@ public interface SuggestionRepository extends CrudRepository<Suggestion, Long> {
 
     List<Suggestion> findByNameContaining(String query);
 
-    @Query("SELECT * FROM locations ORDER BY population DESC")
+    @Query(nativeQuery = true, value = "SELECT * FROM locations l ORDER BY l.population DESC LIMIT 10")
     List<Suggestion> findTop10ByPopulation();
 }

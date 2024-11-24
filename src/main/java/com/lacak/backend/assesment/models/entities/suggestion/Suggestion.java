@@ -8,8 +8,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Entity
 @Data
+@Entity
 @Table(name = "locations")
 public class Suggestion {
 
@@ -25,10 +25,14 @@ public class Suggestion {
     @Column(name = "long")
     private Double longitude;
 
-    @Column(name = "population")
-    private Long population;
+    @Column(name = "country")
+    private String country;
+
+    @Column(name = "admin1")
+    private String admin1;
 
     public SuggestionResponseDto mapToResponseDto() {
-        return new SuggestionResponseDto(this.name, this.latitude, this.longitude, Double.valueOf(0.0));
+        String uniqueName = String.format("%s, %s, %s", this.name, this.admin1, this.country);
+        return new SuggestionResponseDto(uniqueName, this.latitude, this.longitude, Double.valueOf(0.0));
     }
 }

@@ -1,12 +1,9 @@
 package com.lacak.backend.assesment.services;
 
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
-import org.springframework.util.StreamUtils;
 
-import com.lacak.backend.assesment.enums.ScoreTypeEnum;
 import com.lacak.backend.assesment.helpers.SuggestionScoringHelper;
 import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionRequestDto;
 import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionResponseDto;
@@ -27,7 +24,10 @@ public class SuggestionService {
 
     public List<SuggestionResponseDto> getSuggestion(SuggestionRequestDto requestDto) {
 
-        List<Suggestion> suggestionEntities = this.suggestionRepository.findByNameContaining(requestDto.getQuery());
+        // Using database to make the search faster and scalable for later
+        // Assumes the query input is accurate and free of typos.
+        // If typo is taken into account, consider using findAll, then the calculateScore function will handle fuzzy matching.
+        List<Suggestion> suggestionEntities = this.suggestionRepository.findByNameContaining(requestDto.getQ());
 
         List<SuggestionResponseDto> suggestionResponseDtos = suggestionEntities
                 .stream().map(entity -> {
@@ -42,6 +42,7 @@ public class SuggestionService {
         return suggestionResponseDtos;
     }
 
+    // Alternative to empty query input ** NOT USED **
     public List<SuggestionResponseDto> getTop10ByPopulation() {
         List<Suggestion> suggestionEntities = this.suggestionRepository.findTop10ByPopulation();
 
