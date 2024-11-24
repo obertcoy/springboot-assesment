@@ -4,7 +4,7 @@ This is a Spring Boot application developed with **Java 21**. The application pr
 
 ## Hosted URL
 
-[http://54.169.146.58:8080/suggestions?q=](http://54.169.146.58:8080/suggestions?q=)
+[http://47.129.232.0:8080/suggestions?q=](http://47.129.232.0:8080/suggestions?q=)
 
 ---
 
@@ -26,10 +26,10 @@ http://localhost:8080/swagger-ui/index.html#
 
 ## Result
 `/suggestions?q=SomeRandomCityInTheMiddleOfNowhere`
-![image](https://github.com/user-attachments/assets/f1851b7c-db4d-48da-978a-e7736283723f)
+![image](https://github.com/user-attachments/assets/b3671902-44a0-4c1c-a49d-d6fbe8aafa8e)
 
 `/suggestions?q=SomeRandomCityInTheMiddleOfNowhere`
-![image](https://github.com/user-attachments/assets/79d72d8c-a041-4c4c-a11c-eef5cbf3ba9d)
+![image](https://github.com/user-attachments/assets/f7979698-82ea-488c-b976-852871540c02)
 
 
 ---
