@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.models.dtos.suggestion;
+package com.lacak.backend.assessment.models.dtos.suggestion;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

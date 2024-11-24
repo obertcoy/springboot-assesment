@@ -1,6 +1,6 @@
-package com.lacak.backend.assesment.utils;
+package com.lacak.backend.assessment.utils;
 
-import com.lacak.backend.assesment.enums.ScoreTypeEnum;
+import com.lacak.backend.assessment.enums.ScoreTypeEnum;
 
 public class StringMatchingUtils {
 

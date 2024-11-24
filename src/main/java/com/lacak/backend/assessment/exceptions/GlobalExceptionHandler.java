@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.exceptions;
+package com.lacak.backend.assessment.exceptions;
 
 import java.util.stream.Collectors;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
-import com.lacak.backend.assesment.models.dtos.api.ApiResponse;
+import com.lacak.backend.assessment.models.dtos.api.ApiResponse;
 
 import lombok.extern.slf4j.Slf4j;
 

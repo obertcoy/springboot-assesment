@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.controllers;
+package com.lacak.backend.assessment.controllers;
 
 import java.util.List;
 
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lacak.backend.assesment.models.dtos.api.ApiResponse;
-import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionRequestDto;
-import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionResponseDto;
-import com.lacak.backend.assesment.services.SuggestionService;
+import com.lacak.backend.assessment.models.dtos.api.ApiResponse;
+import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionRequestDto;
+import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionResponseDto;
+import com.lacak.backend.assessment.services.SuggestionService;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;

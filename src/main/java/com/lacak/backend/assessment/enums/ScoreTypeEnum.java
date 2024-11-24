@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.enums;
+package com.lacak.backend.assessment.enums;
 
 public enum ScoreTypeEnum {
     RAW,

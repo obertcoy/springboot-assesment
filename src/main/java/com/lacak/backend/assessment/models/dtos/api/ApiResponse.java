@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.models.dtos.api;
+package com.lacak.backend.assessment.models.dtos.api;
 
 import org.springframework.http.HttpStatus;
 

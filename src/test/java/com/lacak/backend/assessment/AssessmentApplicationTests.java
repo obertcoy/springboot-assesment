@@ -1,10 +1,10 @@
-package com.lacak.backend.assesment;
+package com.lacak.backend.assessment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AssesmentApplicationTests {
+class AssessmentApplicationTests {
 
 	@Test
 	void contextLoads() {

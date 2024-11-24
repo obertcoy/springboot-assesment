@@ -1,14 +1,14 @@
-package com.lacak.backend.assesment.services;
+package com.lacak.backend.assessment.services;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.lacak.backend.assesment.helpers.SuggestionScoringHelper;
-import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionRequestDto;
-import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionResponseDto;
-import com.lacak.backend.assesment.models.entities.suggestion.Suggestion;
-import com.lacak.backend.assesment.repositories.SuggestionRepository;
+import com.lacak.backend.assessment.helpers.SuggestionScoringHelper;
+import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionRequestDto;
+import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionResponseDto;
+import com.lacak.backend.assessment.models.entities.suggestion.Suggestion;
+import com.lacak.backend.assessment.repositories.SuggestionRepository;
 
 @Service
 public class SuggestionService {

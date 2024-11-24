@@ -1,6 +1,6 @@
-package com.lacak.backend.assesment.utils;
+package com.lacak.backend.assessment.utils;
 
-import com.lacak.backend.assesment.enums.ScoreTypeEnum;
+import com.lacak.backend.assessment.enums.ScoreTypeEnum;
 
 public class GeoDistanceUtils {
 
@@ -8,7 +8,7 @@ public class GeoDistanceUtils {
     }
 
     private static final double EARTH_RADIUS = 6371;
-    private static final double MAX_DISTANCE = 20000; // For normalizing distance result
+    private static final double MAX_DISTANCE = 5000; // For normalizing distance result
 
     public static double calculateHaversineDistance(double latitudeQuery, double longitudeQuery, double latitudeTarget,
             double longitudeTarget, ScoreTypeEnum scoreTypeEnum) {

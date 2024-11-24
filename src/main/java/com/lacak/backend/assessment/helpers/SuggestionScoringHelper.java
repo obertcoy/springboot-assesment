@@ -1,13 +1,13 @@
-package com.lacak.backend.assesment.helpers;
+package com.lacak.backend.assessment.helpers;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.lacak.backend.assesment.enums.ScoreTypeEnum;
-import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionRequestDto;
-import com.lacak.backend.assesment.models.entities.suggestion.Suggestion;
-import com.lacak.backend.assesment.utils.GeoDistanceUtils;
-import com.lacak.backend.assesment.utils.StringMatchingUtils;
+import com.lacak.backend.assessment.enums.ScoreTypeEnum;
+import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionRequestDto;
+import com.lacak.backend.assessment.models.entities.suggestion.Suggestion;
+import com.lacak.backend.assessment.utils.GeoDistanceUtils;
+import com.lacak.backend.assessment.utils.StringMatchingUtils;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.repositories;
+package com.lacak.backend.assessment.repositories;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.lacak.backend.assesment.models.entities.suggestion.Suggestion;
+import com.lacak.backend.assessment.models.entities.suggestion.Suggestion;
 
 @Repository
 public interface SuggestionRepository extends CrudRepository<Suggestion, Long> {

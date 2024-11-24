@@ -1,6 +1,6 @@
-package com.lacak.backend.assesment.models.entities.suggestion;
+package com.lacak.backend.assessment.models.entities.suggestion;
 
-import com.lacak.backend.assesment.models.dtos.suggestion.SuggestionResponseDto;
+import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionResponseDto;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

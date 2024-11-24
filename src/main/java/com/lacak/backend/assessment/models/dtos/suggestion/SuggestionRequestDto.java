@@ -1,4 +1,4 @@
-package com.lacak.backend.assesment.models.dtos.suggestion;
+package com.lacak.backend.assessment.models.dtos.suggestion;
 
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.DecimalMax;
