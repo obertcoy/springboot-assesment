@@ -15,6 +15,12 @@ import com.lacak.backend.assessment.models.dtos.api.ApiResponse;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Global exception handler for the application. This class intercepts exceptions thrown during
+ * the execution of the application and returns appropriate responses with meaningful error messages.
+ * 
+ */
+
 @RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {

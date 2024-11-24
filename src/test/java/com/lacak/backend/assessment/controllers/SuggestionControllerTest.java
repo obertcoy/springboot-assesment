@@ -14,7 +14,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.lacak.backend.assessment.controllers.SuggestionController;
 import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionRequestDto;
 import com.lacak.backend.assessment.models.dtos.suggestion.SuggestionResponseDto;
 import com.lacak.backend.assessment.services.SuggestionService;

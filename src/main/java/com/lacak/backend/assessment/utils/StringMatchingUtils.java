@@ -2,10 +2,25 @@ package com.lacak.backend.assessment.utils;
 
 import com.lacak.backend.assessment.enums.ScoreTypeEnum;
 
+/**
+ * Utility class for string matching operations.
+ * Containing methods for calculating string similarity such as Levenshtein distance.
+ * 
+ */
+
 public class StringMatchingUtils {
 
     private StringMatchingUtils() {
     }
+
+     /**
+     * Calculates the Levenshtein distance between two strings
+     *
+     * @param query the input query
+     * @param target the location name fetched from database
+     * @param scoreTypeEnum the type of score to return (raw distance or normalized distance)
+     * @return the calculated similarity score based on the Levenshtein distance.
+     */
 
     public static double calculateLevenshteinDistance(String query, String target, ScoreTypeEnum scoreTypeEnum) {
 

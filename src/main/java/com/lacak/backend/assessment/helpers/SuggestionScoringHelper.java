@@ -11,6 +11,14 @@ import com.lacak.backend.assessment.utils.StringMatchingUtils;
 
 import lombok.Getter;
 
+/**
+ * Helper class to calculate the score for a suggestion based on string matching and geographical distance.
+ * Computes a weighted score by combining:
+ * - A textual match score using Levenshtein distance
+ * - A geographical distance score using the Haversine formula
+ * 
+ */
+
 @Getter
 @Component
 public class SuggestionScoringHelper {
@@ -23,6 +31,14 @@ public class SuggestionScoringHelper {
         this.matchingWeight = matchingWeight;
         this.geoDistanceWeight = geoDistanceWeight;
     }
+
+    /**
+     * Calculates a final score for a suggestion based on textual and geographical relevance.
+     * 
+     * @param requestDto the request dto
+     * @param entity the suggestion entity
+     * @return the final calculated score based on both string matching and geographical proximity
+     */
 
     public double calculateScore(SuggestionRequestDto requestDto, Suggestion entity) {
 
